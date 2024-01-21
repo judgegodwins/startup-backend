@@ -1,0 +1,32 @@
+version: '3.9'
+services:
+
+  redis:
+    image: redis:7.0.11-alpine
+    # restart: always
+    ports:
+      - 6379:6379
+    # environment:
+    #   - REDIS_ARGS=--save 60 1 --requirepass MDNcVb924a --loglevel warning
+    command: redis-server --save 60 1 --requirepass MDNcVb924a --loglevel warning
+  
+  # db:
+  #   image: mysql
+  #   # restart: always # if you want it to always start when start your machine
+  #   ports:
+  #     - 3306:3306
+  #   environment:
+  #     MYSQL_DATABASE: stud-mgt
+  #     MYSQL_ROOT_PASSWORD: root-pw123
+
+  db:
+    image: postgres
+    # restart: always # if you want it to always start when start your machine
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: stud-mgt
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root-pw123
+  
+

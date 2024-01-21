@@ -1,0 +1,68 @@
+import { CourseType } from '../entities/enum';
+
+export const levels = [
+  { name: '100 Level', code: 100, default: true },
+  { name: '200 Level', code: 200, default: false },
+  { name: '300 Level', code: 300, default: false },
+  { name: '400 Level', code: 400, default: false },
+  { name: 'Graduated', code: 800, default: false },
+];
+
+export const semesters = [
+  { name: 'First Semester', code: 1 },
+  { name: 'Second Semester', code: 2 },
+];
+
+export const courses = [
+  { name: 'COMMUNICATION SKILLS IN ENGLISH LANGUAGE I', code: 'GES100.1', level: 100, semester: 1, units: 3 },
+  { name: 'INTRODUCTION TO LOGIC AND PHILOSOPHY I', code: 'GES102.1', level: 100, semester: 1, units: 2 },
+  {
+    name: 'INTRODUCTION TO COMPUTER SCIENCE AND BASIC PROGRAMMING',
+    code: 'CSC180.1',
+    level: 100,
+    semester: 1,
+    units: 2,
+  },
+  { name: 'GENERAL BIOLOGY I', code: 'FSB101.1', level: 100, semester: 1, units: 3 },
+  { name: 'GENERAL CHEMISTRY I', code: 'CHM130.1', level: 100, semester: 1, units: 3 },
+  { name: 'ALGEBRA AND TRIGONOMETRY', code: 'MTH110.1', level: 100, semester: 1, units: 3 },
+  { name: 'CALCULUS', code: 'MTH120.1	', level: 100, semester: 1, units: 3 },
+  { name: 'MECHANICS AND PROPERTIES OF MATTER', code: 'PHY101.1', level: 100, semester: 1, units: 3 },
+  { name: 'LABORATORY PRACTICE I', code: 'PHY102.1', level: 100, semester: 1, units: 1 },
+  { name: 'COMPUTER APPLICATIONS', code: 'CSC182.2', level: 100, semester: 2, units: 2 },
+  { name: 'INTRODUCTION TO PROBLEM SOLVING', code: 'CSC183.2', level: 100, semester: 2, units: 2 },
+  { name: 'COMPUTER APPRECIATION AND APPLICATIONS II', code: 'GES101.2', level: 100, semester: 2, units: 2 },
+  { name: 'ELECTRONICS', code: 'PHY133.2', level: 100, semester: 2, units: 2, type: CourseType.ELECTIVE },
+  { name: 'NUMERICAL ANALYSIS', code: 'MTH270.1', level: 200, semester: 1, units: 3 },
+  { name: 'INTRODUCTION TO PROBABILITY AND STATISTICS', code: 'STA260.1', level: 200, semester: 1, units: 3 },
+  { name: 'INTRODUCTIOIN TO COMPUTER PROGRAMMING (FORTRAN)', code: 'CSC280.1', level: 200, semester: 1, units: 3 },
+  { name: 'COMPUTER SYSTEM FUNDAMENTALS', code: 'CSC281.1', level: 200, semester: 1, units: 2 },
+  {
+    name: 'INTRODUCTION TO INFORMATION SYSTEM AND FILE STRUCTURES',
+    code: 'CSC283.1',
+    level: 200,
+    semester: 1,
+    units: 2,
+  },
+  { name: 'INTRODUCTION TO LOGIC AND DESIGN', code: 'CSC284.1', level: 200, semester: 1, units: 2 },
+  { name: 'STRUCTURED PROGRAMMING', code: 'CSC288.1', level: 200, semester: 1, units: 2 },
+  { name: 'LINEAR ALGEBRA', code: 'MTH210.1', level: 200, semester: 1, units: 3, type: CourseType.ELECTIVE },
+  { name: 'MODERN ALGEBRA', code: 'MTH230.1', level: 200, semester: 1, units: 3, type: CourseType.ELECTIVE },
+  { name: 'DATABASE PROGRAMMING', code: 'CSC282.2', level: 200, semester: 2, units: 2 },
+  { name: 'DIGITAL DESIGN AND MICROPROCESSOR', code: 'CSC285.2', level: 200, semester: 2, units: 2 },
+  { name: 'DATA STRUCTURES', code: 'CSC286.2', level: 200, semester: 2, units: 2 },
+  { name: 'OBJECT ORIENTED PROGRAMMING I', code: 'CSC287.2', level: 200, semester: 2, units: 2 },
+  { name: 'COMMUNITY SERVICE', code: 'FSC 2CI.2', level: 200, semester: 2, units: 1 },
+  { name: 'MATHEMATICAL METHODS I', code: 'MTH224.2', level: 200, semester: 2, units: 2 },
+  { name: 'ELEMENTARY DIFFERENTIAL EQUATIONS', code: 'MTH250.2', level: 200, semester: 2, units: 3 },
+  { name: 'MATHEMATICAL STATISTICS I', code: 'STA262.2', level: 200, semester: 2, units: 3, type: CourseType.ELECTIVE },
+  { name: 'ELECTRONICS I', code: 'PHY351.2', level: 200, semester: 2, units: 3, type: CourseType.ELECTIVE },
+  { name: 'COMPUTER ARCHITECTURE I', code: 'CSC382.1', level: 300, semester: 1, units: 2 },
+  { name: 'OPERATING SYSTEMS', code: 'CSC394.1', level: 300, semester: 1, units: 3 },
+  { name: 'SOFTWARE ENGINEERING', code: 'CSC395.1', level: 300, semester: 1, units: 3 },
+  { name: 'AUTOMATA THEORY, COMPUTABILITY AND FORMAL LANGUAGES', code: 'CSC396.1', level: 300, semester: 1, units: 3 },
+  { name: 'COMPUTATIONAL METHODS', code: 'CSC397.1', level: 300, semester: 1, units: 2 },
+  { name: 'FUNDAMENTALS OF ENTREPRENEURSHIP STUDIES', code: 'GES300.1', level: 300, semester: 1, units: 2 },
+  { name: 'OPERATIONS RESEARCH', code: 'STA370.1', level: 300, semester: 1, units: 3 },
+  { name: 'INDUSTRIAL TRAINING', code: 'CSC300.2', level: 300, semester: 2, units: 9 },
+];
