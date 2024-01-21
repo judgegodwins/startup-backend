@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "dev": "cross-env APP_ENV=local nodemon ./src/server.ts",
-    "build": "rimraf ./build && tsc",
+    "build": "rimraf ./build && tsc && cp -R src/lib/mail build/src/lib",
     "test": "NODE_ENV=test APP_ENV=test mocha -r ts-node/register",
     "prettier": "prettier --ignore-path .gitignore --write .",
     "lint": "eslint . --ext .ts --fix",
