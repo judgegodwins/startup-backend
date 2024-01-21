@@ -123,7 +123,7 @@ export const validateConfig = (options?: { exceptions?: string[] }) => {
 };
 
 validateConfig({
-  exceptions: ['redis.username', 'redis.tls'],
+  exceptions: ['redis.username', 'redis.tls', 's3.endpoint'],
 });
 
 export default config;
